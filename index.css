@@ -203,7 +203,7 @@ article.large-article .large-img-info .post-meta {
     justify-content: space-between;
 }
 
-.post.post-img {
+.post .post-img {
     width: 100%;
     height: 250px;
    
@@ -259,3 +259,39 @@ article:not(article.large-article, article.semi-large-article-1, article.semi-la
     grid-column: span 2;
 }
 
+/* FOOTER */
+footer {
+    background-color: #0a0b0c;
+    height: 200px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.inner-footer {
+    display: flex;
+    color: #f1f1f1;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner-footer section {
+    width: 200px;
+    
+}
+
+.inner-footer div {
+     width: 200px;
+     text-align: right;
+}
+
+.inner-footer nav {
+    width: auto;
+    
+}
+
+.inner-footer ul li {
+    font-weight: 100;
+}
