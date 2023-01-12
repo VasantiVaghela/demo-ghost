@@ -344,8 +344,32 @@ article:not(article.large-article, article.semi-large-article-1, article.semi-la
     .main-content-outer {
        display: flex;
        flex: 1;
-    } 
+    }
+
+    .outer-footer {
+       
+        font-size: 12px;
+        
+      
+    }
+    .inner-footer section {
+        width: 250px;
     
+    }
+
+    .inner-footer div {
+        width: 250px;
+        text-align: right;
+    }
+
+    .inner-footer nav {
+        width: 250px;
+    
+    }
+
+    .inner-footer ul li {
+        font-weight: 100;
+    }
     
     
 }
