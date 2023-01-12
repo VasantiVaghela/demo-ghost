@@ -68,6 +68,9 @@ nav {
     color:#f1f1f1; 
     background-color: transparent;
 }
+nav i {
+    visibility: hidden;
+}
 
 nav ul {
     display: flex;
@@ -317,6 +320,10 @@ article:not(article.large-article, article.semi-large-article-1, article.semi-la
         height: fit-content
     }
 
+    nav i {
+        visibility: hidden;
+    }
+
     /* article {
         height: 620px;
     } */
@@ -372,4 +379,17 @@ article:not(article.large-article, article.semi-large-article-1, article.semi-la
     }
     
     
+}
+
+@media (max-width:660px) {
+    nav ul:nth-child(even) {
+        display: none;
+    }
+
+    nav i {
+        visibility: visible;
+        width: 50px;
+        margin-top: 40px;
+    }
+
 }
