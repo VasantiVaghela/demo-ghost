@@ -68,9 +68,9 @@ nav {
     color:#f1f1f1; 
     background-color: transparent;
 }
-nav i {
-    visibility: hidden;
-}
+.drop-down {
+    display: none;
+} 
 
 nav ul {
     display: flex;
@@ -320,8 +320,8 @@ article:not(article.large-article, article.semi-large-article-1, article.semi-la
         height: fit-content
     }
 
-    nav i {
-        visibility: hidden;
+    .drop-down {
+        display: none;
     }
 
     /* article {
@@ -386,10 +386,62 @@ article:not(article.large-article, article.semi-large-article-1, article.semi-la
         display: none;
     }
 
-    nav i {
-        visibility: visible;
-        width: 50px;
-        margin-top: 40px;
+    .drop-down {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
+    .fa-bars {
+        width: 50px;
+        height: 50px;
+        padding: 40px;
+        color: white;
+        position: relative;
+    }
+
+    .menu-items {
+        display: none;  
+    }
+
+
+    .menu-items li {
+        background-color: rgb(99, 3, 86);
+        text-decoration: none;
+        /* align-self: flex-end; */
+    }
+
+    .menu-items li a {
+        color: white;
+        text-decoration: none;
+        text-align: right;
+    }
+        
+    #button:checked ~ .menu-items {
+        display: flex;
+        width: 150px;
+        height: 120px;
+        align-items:left;
+        
+        flex-direction: column;
+        list-style: none;
+        padding: 5px;
+        justify-content: space-between;
+     }
+
+     .intro-div {
+        min-height: 400px;
+        margin-top: 50px;
+     }
+
+    nav {
+        margin-bottom: 100px;
+    }
+
+    nav ul:nth-child(odd) {
+        visibility: hidden;
+    }
 }
+     
+     
+
